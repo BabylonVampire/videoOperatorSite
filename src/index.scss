@@ -1,0 +1,75 @@
+:root {
+	--index: calc(1vw + 1vh);
+
+	--color-main: #000000;
+	--color-secondary: #111111;
+	--color-contrast-main: rgb(90, 186, 150);
+	--color-contrast-secondary: rgb(39, 99, 77);
+
+	--color-font-main: #ffffff;
+	--color-font-secondary: #999999;
+
+	--font-size-xs: calc(var(--index) * 0.3);
+	--font-size-s: calc(var(--index) * 0.6);
+	--font-size-sm: calc(var(--index) * 0.8);
+	--font-size-m: calc(var(--index) * 1);
+	--font-size-l: calc(var(--index) * 2);
+	--font-size-xl: calc(var(--index) * 3);
+
+	--font-family-heading: golos;
+	--font-family-main: handil;
+}
+
+/* SCROLL */
+*::-webkit-scrollbar {
+	width: 6px; /* ширина scrollbar */
+}
+*::-webkit-scrollbar-track {
+	background-color: var(--color-main); /* цвет плашки */
+}
+*::-webkit-scrollbar-thumb {
+	background: var(--color-secondary); /* цвет дорожки */
+	border-radius: 8px; /* закругления плашки */
+}
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--color-secondary) var(--color-main);
+}
+/* SCROLL */
+
+/* COLOR OF SELECTION */
+::selection {
+	background: var(--font-color-code-secondary);
+	color: var(--font-color-main);
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: var(--font-color-code-secondary);
+	color: var(--font-color-main);
+	text-shadow: none;
+}
+/* COLOR OF SELECTION */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+@font-face {
+	font-family: kreadon;
+	src: url(/src/assets/fonts/kreadon/fonts/Kreadon-B.otf);
+}
+
+@font-face {
+	font-family: handil;
+	src: url(/src/assets/fonts/handil/HandilPro-Medium.otf);
+}
+
+@font-face {
+	font-family: golos;
+	src: url(/src/assets/fonts/golos/OtTt/Golos_Text_Regular/Golos_Text_Regular.ttf);
+}
