@@ -16,10 +16,6 @@ const MainPage: FC<IMainPageProps> = ({}) => {
 			<ContactsSection />
 		</main>
 	);
-	//Красивая hero секция с минимумом текста
-	//О нас
-	//Преимущества
-	//Контакты
 };
 
 export default MainPage;

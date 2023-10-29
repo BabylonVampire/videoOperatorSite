@@ -4,25 +4,22 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 
 const Layout: FC<PropsWithChildren> = memo(({ children }) => {
+	const links = [
+		{ heading: 'О нас', link: '#about' },
+		{ heading: 'Наши преимущества', link: '#benefits' },
+		{ heading: 'Контакты', link: '#contacts' },
+	];
+	const contacts = {
+		phones: ['+7 (999) 999 99-99'],
+		emails: ['test@gmail.com'],
+	};
+
 	return (
 		<div className={styles.layout}>
 			<div className={styles.mainLayoutBox}>
-				<Header
-					links={[
-						{ heading: 'О нас', link: '#about' },
-						{ heading: 'О нас', link: '#about' },
-						{ heading: 'О нас', link: '#about' },
-					]}
-				/>
+				<Header links={links} />
 				{children}
-				<Footer
-					links={[
-						{ heading: 'О нас', link: '#about' },
-						{ heading: 'О нас', link: '#about' },
-						{ heading: 'О нас', link: '#about' },
-					]}
-					contacts={{ phones: [], emails: [] }}
-				/>
+				<Footer links={links} contacts={contacts} />
 			</div>
 		</div>
 	);

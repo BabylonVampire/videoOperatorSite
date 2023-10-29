@@ -13,6 +13,7 @@
 	--font-size-s: calc(var(--index) * 0.6);
 	--font-size-sm: calc(var(--index) * 0.8);
 	--font-size-m: calc(var(--index) * 1);
+	--font-size-ml: calc(var(--index) * 1.5);
 	--font-size-l: calc(var(--index) * 2);
 	--font-size-xl: calc(var(--index) * 3);
 
@@ -57,11 +58,6 @@
 	padding: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-}
-
-@font-face {
-	font-family: kreadon;
-	src: url(/src/assets/fonts/kreadon/fonts/Kreadon-B.otf);
 }
 
 @font-face {

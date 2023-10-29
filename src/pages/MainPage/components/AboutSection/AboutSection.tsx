@@ -9,7 +9,7 @@ const AboutSection: FC<IAboutSectionProps> = ({}) => {
 		spawnBugs(10, styles.bugContainer);
 	}, []);
 	return (
-		<section className={styles.aboutSection}>
+		<section className={styles.aboutSection} id="about">
 			<div className={styles.innerBox}>
 				<div className={styles.textBox}>
 					<div className={styles.heading}>О нас</div>

@@ -16,7 +16,7 @@ const Footer: FC<IFooterProps> = memo(({ links, contacts }) => {
 		<footer className={styles.footer}>
 			<div className={styles.FooterContainer}>
 				<div className={styles.mainBox}>
-					<ul className={styles.optionsCol}>
+					{/* <ul className={styles.optionsCol}>
 						<div className={styles.colHeading}>Навигация</div>
 						<div className={styles.divider} />
 						{links.map((link) => {
@@ -28,7 +28,7 @@ const Footer: FC<IFooterProps> = memo(({ links, contacts }) => {
 								</li>
 							);
 						})}
-					</ul>
+					</ul> */}
 
 					<ul className={styles.contactsCol}>
 						<div className={styles.colHeading}>Контакты</div>
@@ -40,19 +40,21 @@ const Footer: FC<IFooterProps> = memo(({ links, contacts }) => {
 							return <li className={styles.contact}>{email}</li>;
 						})}
 					</ul>
-					<ul className={styles.linksCol}>
+					<div className={styles.linksCol}>
 						<div className={styles.colHeading}>Наши соцсети</div>
 						<div className={styles.divider} />
-						<li className={styles.outLink}>
-							<FaTelegram />
-						</li>
-						<li className={styles.outLink}>
-							<FaYoutube />
-						</li>
-						<li className={styles.outLink}>
-							<FaInstagram />
-						</li>
-					</ul>
+						<div className={styles.awayLinksBox}>
+							<a className={styles.outLink}>
+								<FaTelegram />
+							</a>
+							<a className={styles.outLink}>
+								<FaYoutube />
+							</a>
+							<a className={styles.outLink}>
+								<FaInstagram />
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div className={styles.copyright}>
