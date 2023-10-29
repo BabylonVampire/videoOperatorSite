@@ -12,12 +12,15 @@ const HeroSection: FC<IHeroSectionProps> = ({}) => {
 					type="video/mp4"
 				/>
 			</video>
-			<div className={styles.headingAndDescriptionBox}>
-				<div className={styles.heading}>Заголовок</div>
-				<div className={styles.description}>
-					Описание под заголовком, должно помещаться много и казаться
-					нормально
+			<div className={styles.contentBox}>
+				<div className={styles.headingAndDescriptionBox}>
+					<div className={styles.heading}>Заголовок</div>
+					<div className={styles.description}>
+						Описание под заголовком, должно помещаться много и
+						казаться нормально
+					</div>
 				</div>
+				<div className={styles.blankDiv} />
 			</div>
 		</section>
 	);

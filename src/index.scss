@@ -8,6 +8,7 @@
 
 	--color-font-main: #ffffff;
 	--color-font-secondary: #999999;
+	--color-font-contrast: #000000;
 
 	--font-size-xs: calc(var(--index) * 0.3);
 	--font-size-s: calc(var(--index) * 0.6);
@@ -18,7 +19,7 @@
 	--font-size-xl: calc(var(--index) * 3);
 
 	--font-family-heading: golos;
-	--font-family-main: handil;
+	--font-family-main: oneSet; //handil;
 }
 
 /* SCROLL */
@@ -29,26 +30,26 @@
 	background-color: var(--color-main); /* цвет плашки */
 }
 *::-webkit-scrollbar-thumb {
-	background: var(--color-secondary); /* цвет дорожки */
+	background: var(--color-contrast-secondary); /* цвет дорожки */
 	border-radius: 8px; /* закругления плашки */
 }
 
 * {
 	scrollbar-width: thin;
-	scrollbar-color: var(--color-secondary) var(--color-main);
+	scrollbar-color: var(--color-contrast-secondary) var(--color-main);
 }
 /* SCROLL */
 
 /* COLOR OF SELECTION */
 ::selection {
-	background: var(--font-color-code-secondary);
-	color: var(--font-color-main);
+	background: var(--color-contrast-secondary);
+	color: var(--color-font-contrast);
 	text-shadow: none;
 }
 
 ::-moz-selection {
-	background: var(--font-color-code-secondary);
-	color: var(--font-color-main);
+	background: var(--color-contrast-secondary);
+	color: var(--color-font-contrast);
 	text-shadow: none;
 }
 /* COLOR OF SELECTION */
@@ -68,4 +69,15 @@
 @font-face {
 	font-family: golos;
 	src: url(/src/assets/fonts/golos/OtTt/Golos_Text_Regular/Golos_Text_Regular.ttf);
+}
+
+@font-face {
+	font-family: oneSet;
+	src: url(/src/assets/fonts/Onest.ttf);
+}
+
+@media (max-width: 400px) {
+	:root {
+		--font-size-m: calc(var(--index) * 1.3);
+	}
 }

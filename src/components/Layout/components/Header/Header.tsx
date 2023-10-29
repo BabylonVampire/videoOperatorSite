@@ -1,15 +1,50 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import styles from './Header.module.scss';
+import { HiMenu } from 'react-icons/hi';
 
 interface IHeaderProps {
 	links: { heading: string; link: string }[];
 }
 
 const Header: FC<IHeaderProps> = ({ links }) => {
+	const [burger, setBurger] = useState<boolean>(false);
+	const changeBurger = () => {
+		setBurger((prev) => !prev);
+	};
 	return (
 		<div className={styles.header}>
+			<div
+				className={styles.burgerField}
+				style={{
+					pointerEvents: burger ? 'all' : 'none',
+					opacity: burger ? '0.4' : '0',
+				}}
+				onClick={changeBurger}
+			/>
+			<div
+				className={styles.burgerMenu}
+				style={{
+					right: burger ? '0' : '-100%',
+				}}
+			>
+				<div className={styles.burgerLogo} />
+				<div className={styles.divider} />
+				<div className={styles.burgerLinks}>
+					{links.map((link) => {
+						return (
+							<a
+								className={styles.link}
+								href={link.link}
+								onClick={changeBurger}
+							>
+								{link.heading}
+							</a>
+						);
+					})}
+				</div>
+			</div>
 			<div className={styles.pcDisplay}>
-				<div className={styles.logo}></div>
+				<div className={styles.logo} />
 				<div className={styles.linkBox}>
 					{links.map((link) => {
 						return (
@@ -18,6 +53,9 @@ const Header: FC<IHeaderProps> = ({ links }) => {
 							</a>
 						);
 					})}
+				</div>
+				<div className={styles.burgerBtn} onClick={changeBurger}>
+					<HiMenu />
 				</div>
 			</div>
 		</div>
