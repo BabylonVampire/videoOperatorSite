@@ -1,13 +1,9 @@
-import { FC, useEffect } from 'react';
+import { FC } from 'react';
 import styles from './AboutSection.module.scss';
-import { spawnBugs } from 'fairy-anims/src';
 
 interface IAboutSectionProps {}
 
 const AboutSection: FC<IAboutSectionProps> = ({}) => {
-	useEffect(() => {
-		spawnBugs(10, styles.bugContainer);
-	}, []);
 	return (
 		<section className={styles.aboutSection} id="about">
 			<div className={styles.innerBox}>
@@ -24,7 +20,18 @@ const AboutSection: FC<IAboutSectionProps> = ({}) => {
 					</div>
 				</div>
 				<div className={styles.image}>
-					<div className={styles.bugContainer} />
+					<video
+						className={styles.videoTag}
+						controls
+						autoPlay
+						loop
+						muted
+					>
+						<source
+							src="/src/assets/video/about.mp4"
+							type="video/mp4"
+						/>
+					</video>
 				</div>
 			</div>
 		</section>

@@ -7,10 +7,7 @@ const HeroSection: FC<IHeroSectionProps> = ({}) => {
 	return (
 		<section className={styles.heroSection}>
 			<video className={styles.videoTag} autoPlay loop muted>
-				<source
-					src="/src/assets/video/cameraBack.mp4"
-					type="video/mp4"
-				/>
+				<source src="/src/assets/video/about.mp4" type="video/mp4" />
 			</video>
 			<div className={styles.contentBox}>
 				<div className={styles.headingAndDescriptionBox}>

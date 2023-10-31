@@ -1,5 +1,5 @@
 .aboutSection {
-	height: 60vh;
+	min-height: 60vh;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -9,12 +9,12 @@
 }
 .innerBox {
 	width: 90%;
-	height: 90%;
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	gap: calc(var(--index));
 	& > * {
 		flex: 1;
 	}
@@ -23,7 +23,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	// align-items: center;
+	width: 100%;
 }
 
 .heading {
@@ -48,37 +48,28 @@
 	line-height: calc(var(--font-size-m) * 1.3);
 	font-family: var(--font-family-main);
 	color: var(--color-font-secondary);
-	// background-image: linear-gradient(
-	// 	90deg,
-	// 	rgba(153, 153, 153, 1) 20%,
-	// 	rgb(75, 75, 75) 80%
-	// );
-	// background-size: cover;
-	// color: transparent;
-	// -moz-background-clip: text;
-	// -webkit-background-clip: text;
 }
 
 .image {
 	width: 100%;
-	height: 100%;
 	position: relative;
-	filter: hue-rotate(270deg) saturate(0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 }
 
-.bugContainer {
+.videoTag {
+	border-radius: 10px;
 	width: 100%;
-	height: 100%;
 }
 
 @media (max-width: 800px) {
 	.innerBox {
+		flex-direction: column;
 		& > * {
 			flex: auto;
 		}
-	}
-	.image {
-		display: none;
 	}
 }
 
