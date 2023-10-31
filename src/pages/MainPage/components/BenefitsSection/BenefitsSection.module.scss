@@ -23,13 +23,15 @@
 	font-size: var(--font-size-xl);
 	font-family: var(--font-family-heading);
 	text-transform: uppercase;
+	color: var(--color-contrast-main);
+
 	//
 	// background-image: url(https://media.tenor.com/CHchDWaZDz4AAAAC/fog-smoke.gif);
-	background-image: url(/src/assets/gifs/smoke.gif);
-	background-size: cover;
-	color: transparent;
-	-moz-background-clip: text;
-	-webkit-background-clip: text;
+	// background-image: url(/src/assets/gifs/smoke.gif);
+	// background-size: cover;
+	// color: transparent;
+	// -moz-background-clip: text;
+	// -webkit-background-clip: text;
 	//
 	text-align: center;
 }

@@ -1,7 +1,6 @@
 import { FC, useState } from 'react';
 import styles from './Header.module.scss';
 import { HiMenu } from 'react-icons/hi';
-
 interface IHeaderProps {
 	links: { heading: string; link: string }[];
 }
