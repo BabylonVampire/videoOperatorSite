@@ -16,28 +16,22 @@ const Footer: FC<IFooterProps> = memo(({ links, contacts }) => {
 		<footer className={styles.footer}>
 			<div className={styles.FooterContainer}>
 				<div className={styles.mainBox}>
-					{/* <ul className={styles.optionsCol}>
-						<div className={styles.colHeading}>Навигация</div>
-						<div className={styles.divider} />
-						{links.map((link) => {
-							return (
-								<li className={styles.option}>
-									<a href={link.link} className={styles.link}>
-										{link.heading}
-									</a>
-								</li>
-							);
-						})}
-					</ul> */}
-
 					<ul className={styles.contactsCol}>
 						<div className={styles.colHeading}>Контакты</div>
 						<div className={styles.divider} />
 						{contacts.phones.map((phone) => {
-							return <li className={styles.contact}>{phone}</li>;
+							return (
+								<li className={styles.contact} key={phone}>
+									{phone}
+								</li>
+							);
 						})}
 						{contacts.emails.map((email) => {
-							return <li className={styles.contact}>{email}</li>;
+							return (
+								<li className={styles.contact} key={email}>
+									{email}
+								</li>
+							);
 						})}
 					</ul>
 					<div className={styles.linksCol}>

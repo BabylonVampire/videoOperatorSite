@@ -32,6 +32,7 @@ const Header: FC<IHeaderProps> = ({ links }) => {
 					{links.map((link) => {
 						return (
 							<a
+								key={link.link + link.heading}
 								className={styles.link}
 								href={link.link}
 								onClick={changeBurger}
@@ -47,7 +48,11 @@ const Header: FC<IHeaderProps> = ({ links }) => {
 				<div className={styles.linkBox}>
 					{links.map((link) => {
 						return (
-							<a className={styles.link} href={link.link}>
+							<a
+								className={styles.link}
+								href={link.link}
+								key={`burger${link.link + link.heading}`}
+							>
 								{link.heading}
 							</a>
 						);
