@@ -2,6 +2,7 @@ import { FC, PropsWithChildren, memo } from 'react';
 import styles from './layout.module.scss';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
+import FloatButton from './components/FloatButton/FloatButton';
 
 const Layout: FC<PropsWithChildren> = memo(({ children }) => {
 	const links = [
@@ -20,6 +21,7 @@ const Layout: FC<PropsWithChildren> = memo(({ children }) => {
 				<Header links={links} />
 				{children}
 				<Footer links={links} contacts={contacts} />
+				<FloatButton />
 			</div>
 		</div>
 	);

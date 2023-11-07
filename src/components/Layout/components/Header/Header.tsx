@@ -26,8 +26,6 @@ const Header: FC<IHeaderProps> = ({ links }) => {
 					right: burger ? '0' : '-100%',
 				}}
 			>
-				<div className={styles.burgerLogo} />
-				<div className={styles.divider} />
 				<div className={styles.burgerLinks}>
 					{links.map((link) => {
 						return (

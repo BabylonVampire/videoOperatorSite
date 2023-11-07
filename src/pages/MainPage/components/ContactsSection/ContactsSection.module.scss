@@ -42,7 +42,7 @@
 .email {
 	font-weight: bold;
 	width: fit-content;
-	font-size: var(--font-size-ml);
+	font-size: calc(var(--font-size-ml) * 0.8);
 	font-family: var(--font-family-main);
 	background-image: linear-gradient(
 		270deg,
@@ -85,6 +85,11 @@
 	transition: 0.2s;
 }
 
+.phoneIcon {
+	transition: 0.2s;
+	color: rgb(38 131 51);
+}
+
 .telegram:hover {
 	color: #296a9c;
 	filter: brightness(1.5) drop-shadow(0 0 4px rgba(255, 255, 255, 0.5));
@@ -97,6 +102,11 @@
 
 .youTube:hover {
 	color: #d12b2b;
+	filter: brightness(1.5) drop-shadow(0 0 4px rgba(255, 255, 255, 0.5));
+}
+
+.phoneIcon:hover {
+	color: rgb(55, 192, 73);
 	filter: brightness(1.5) drop-shadow(0 0 4px rgba(255, 255, 255, 0.5));
 }
 

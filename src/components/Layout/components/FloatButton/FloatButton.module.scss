@@ -1,0 +1,23 @@
+.FloatButton {
+	display: flex;
+	position: fixed;
+	bottom: calc(var(--index) * 2);
+	right: calc(var(--index) * 2);
+	height: 5em;
+	width: 5em;
+	border-radius: 50%;
+	background-color: var(--color-contrast-main);
+	color: var(--color-font-main);
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.phoneIcon {
+	margin-top: 0.2em;
+	font-size: 2.5em;
+}
+
+.FloatButton:hover {
+	rotate: 360deg;
+}

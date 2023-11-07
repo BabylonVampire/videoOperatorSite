@@ -18,7 +18,7 @@
 	--font-size-l: calc(var(--index) * 2);
 	--font-size-xl: calc(var(--index) * 3);
 
-	--font-family-heading: golos;
+	--font-family-heading: furore;
 	--font-family-main: oneSet; //handil;
 }
 
@@ -62,13 +62,13 @@
 }
 
 @font-face {
-	font-family: handil;
-	src: url(/src/assets/fonts/handil/HandilPro-Medium.otf);
+	font-family: golos;
+	src: url(/src/assets/fonts/golos/OtTt/Golos_Text_Regular/Golos_Text_Regular.ttf);
 }
 
 @font-face {
-	font-family: golos;
-	src: url(/src/assets/fonts/golos/OtTt/Golos_Text_Regular/Golos_Text_Regular.ttf);
+	font-family: furore;
+	src: url(/src/assets/fonts/furore/Furore.otf);
 }
 
 @font-face {
@@ -77,6 +77,12 @@
 }
 
 @media (max-width: 400px) {
+	:root {
+		--font-size-m: calc(var(--index) * 1.5);
+	}
+}
+
+@media (max-width: 300px) {
 	:root {
 		--font-size-m: calc(var(--index) * 1.3);
 	}
