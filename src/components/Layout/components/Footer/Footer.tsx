@@ -3,14 +3,13 @@ import styles from './Footer.module.scss';
 import { FaTelegram, FaYoutube, FaInstagram } from 'react-icons/fa6';
 
 interface IFooterProps {
-	links: { heading: string; link: string }[];
 	contacts: {
 		phones: string[];
 		emails: string[];
 	};
 }
 
-const Footer: FC<IFooterProps> = memo(({ links, contacts }) => {
+const Footer: FC<IFooterProps> = memo(({ contacts }) => {
 	const date = new Date().getFullYear();
 	return (
 		<footer className={styles.footer}>
@@ -38,13 +37,13 @@ const Footer: FC<IFooterProps> = memo(({ links, contacts }) => {
 						<div className={styles.colHeading}>Наши соцсети</div>
 						<div className={styles.divider} />
 						<div className={styles.awayLinksBox}>
-							<a className={styles.outLink}>
+							<a className={`${styles.outLink} ${styles.tg}`}>
 								<FaTelegram />
 							</a>
-							<a className={styles.outLink}>
+							<a className={`${styles.outLink} ${styles.yt}`}>
 								<FaYoutube />
 							</a>
-							<a className={styles.outLink}>
+							<a className={`${styles.outLink} ${styles.ig}`}>
 								<FaInstagram />
 							</a>
 						</div>

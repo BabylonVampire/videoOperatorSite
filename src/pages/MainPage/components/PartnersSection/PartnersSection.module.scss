@@ -1,0 +1,93 @@
+.partnersSection {
+	width: 100%;
+	min-height: 30vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.innerBox {
+	width: 80%;
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.heading {
+	width: fit-content;
+	font-weight: bold;
+	font-size: var(--font-size-xl);
+	font-family: var(--font-family-heading);
+	text-transform: uppercase;
+	color: var(--color-contrast-main);
+}
+
+.partnersBox {
+	width: 80%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: calc(var(--index) * 2);
+}
+
+.partner {
+	width: 100%;
+	aspect-ratio: 3/1;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.picBox {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex: 1;
+}
+
+.picWrapper {
+	width: 90%;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pic {
+	width: 70%;
+	aspect-ratio: 1/1;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.partnerName {
+	font-size: var(--font-size-m);
+	color: var(--color-font-main);
+	font-family: var(--font-family-heading);
+}
+
+.textBox {
+	flex: 2;
+	width: 100%;
+	height: 60%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 12px;
+	padding: 10px;
+	background-color: var(--color-secondary);
+}
+
+.text {
+	font-size: var(--font-size-m);
+	color: var(--color-font-secondary);
+	font-family: var(--font-family-main);
+}

@@ -70,6 +70,7 @@
 	font-size: var(--font-size-l);
 	display: inline-block;
 	cursor: pointer;
+	transition: 0.3s;
 }
 .options {
 	display: flex;
@@ -112,6 +113,18 @@
 	height: 4px;
 	background-color: var(--color-contrast-secondary);
 	margin: calc(var(--index) * 0.3);
+}
+
+.tg:hover {
+	color: #267cd2;
+}
+
+.yt:hover {
+	color: #f00;
+}
+
+.ig:hover {
+	color: #dc2743;
 }
 
 @media (max-width: 900px) {

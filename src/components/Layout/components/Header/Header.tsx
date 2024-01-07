@@ -45,6 +45,7 @@ const Header: FC<IHeaderProps> = ({ links }) => {
 			<div className={styles.pcDisplay}>
 				<div className={styles.logo} />
 				<div className={styles.phone}>+7 999 999 99 99</div>
+				<div className={styles.divider} />
 				<div className={styles.linkBox}>
 					{links.map((link) => {
 						return (
