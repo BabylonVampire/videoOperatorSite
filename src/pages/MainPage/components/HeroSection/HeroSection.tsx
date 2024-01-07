@@ -3,7 +3,7 @@ import styles from './HeroSection.module.scss';
 
 interface IHeroSectionProps {}
 
-const HeroSection: FC<IHeroSectionProps> = ({}) => {
+const HeroSection: FC<IHeroSectionProps> = () => {
 	return (
 		<section className={styles.heroSection}>
 			<video className={styles.videoTag} autoPlay loop muted>

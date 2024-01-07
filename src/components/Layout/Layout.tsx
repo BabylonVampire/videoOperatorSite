@@ -6,9 +6,11 @@ import FloatButton from './components/FloatButton/FloatButton';
 
 const Layout: FC<PropsWithChildren> = memo(({ children }) => {
 	const links = [
-		{ heading: 'О нас', link: '#about' },
+		{ heading: 'Примеры работ', link: '#examples' },
 		{ heading: 'Наши преимущества', link: '#benefits' },
-		{ heading: 'Контакты', link: '#contacts' },
+		{ heading: 'Стоимость', link: '#price' },
+		{ heading: 'FAQ', link: '#faq' },
+		{ heading: 'Наши клиенты', link: '#contacts' },
 	];
 	const contacts = {
 		phones: ['+7 (999) 999 99-99'],

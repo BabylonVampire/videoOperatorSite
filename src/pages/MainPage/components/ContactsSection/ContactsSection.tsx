@@ -5,7 +5,7 @@ import { spawnBugs } from 'fairy-anims/src';
 
 interface IContactsSectionProps {}
 
-const ContactsSection: FC<IContactsSectionProps> = ({}) => {
+const ContactsSection: FC<IContactsSectionProps> = () => {
 	useEffect(() => {
 		spawnBugs(10, styles.bugContainer);
 	}, []);

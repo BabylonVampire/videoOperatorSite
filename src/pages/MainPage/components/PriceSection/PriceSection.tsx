@@ -1,14 +1,11 @@
-import { FC } from 'react';
-import styles from './AboutSection.module.scss';
+import styles from './PriceSection.module.scss';
 
-interface IAboutSectionProps {}
-
-const AboutSection: FC<IAboutSectionProps> = ({}) => {
+const PriceSection = () => {
 	return (
-		<section className={styles.aboutSection} id="about">
+		<section className={styles.priceSection} id="price">
 			<div className={styles.innerBox}>
 				<div className={styles.textBox}>
-					<div className={styles.heading}>О нас</div>
+					<div className={styles.heading}>Стоимость</div>
 					<div className={styles.text}>
 						Pinkerton — второй студийный альбом американской
 						рок-группы Weezer, выпущенный 24 сентября 1996 года на
@@ -19,23 +16,9 @@ const AboutSection: FC<IAboutSectionProps> = ({}) => {
 						Отказавшись от найма продюсера, Weezer
 					</div>
 				</div>
-				<div className={styles.image}>
-					<video
-						className={styles.videoTag}
-						controls
-						autoPlay
-						loop
-						muted
-					>
-						<source
-							src="/src/assets/video/about.mp4"
-							type="video/mp4"
-						/>
-					</video>
-				</div>
 			</div>
 		</section>
 	);
 };
 
-export default AboutSection;
+export default PriceSection;

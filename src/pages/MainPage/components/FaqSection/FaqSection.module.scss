@@ -1,0 +1,42 @@
+.faqSection {
+	min-height: 30vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.innerBox {
+	height: 80%;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	gap: calc(var(--index) * 1.5);
+}
+
+.heading {
+	width: fit-content;
+	font-weight: bold;
+	font-size: var(--font-size-xl);
+	font-family: var(--font-family-heading);
+	text-transform: uppercase;
+	color: var(--color-contrast-main);
+	//
+	// background-image: url(https://media.tenor.com/CHchDWaZDz4AAAAC/fog-smoke.gif);
+	// background-image: url(/src/assets/gifs/smoke.gif);
+	// background-size: cover;
+	// color: transparent;
+	// -moz-background-clip: text;
+	// -webkit-background-clip: text;
+	//
+}
+
+.faqContainer {
+	width: 100%;
+}
+
+.answer {
+	font-family: var(--font-family-main);
+	color: var(--color-font-main);
+}
